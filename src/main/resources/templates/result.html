@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	</head>
+	<body>
+		<div th:if="${url != null}">
+			<img th:src="${url}"/>
+		</div>		
+		<div th:if="${url == null}">
+			Error, card was not found.
+		</div>		
+	</body>	
+</html>
